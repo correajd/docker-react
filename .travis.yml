@@ -5,8 +5,8 @@ services:
 before_install:
   - docker build -t jcorrea/docker-react -f Dockerfile_dev .
 
-script:
-  - docker run jcorrea/docker-react npm run test -- --coverage
+#script:
+#  - docker run jcorrea/docker-react npm run test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
